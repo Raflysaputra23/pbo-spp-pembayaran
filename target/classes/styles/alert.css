@@ -1,0 +1,24 @@
+.dialog-pane {
+  -fx-background-color: #252525ff;
+  -fx-border-color: #222224ff;
+  -fx-border-width: 2px;
+  -fx-padding: 8px;
+}
+
+.dialog-pane .label {
+  -fx-text-fill: white;
+  -fx-font-size: 14px;
+  -fx-font-family: "Poppins SemiBold";
+}
+
+
+.dialog-pane .button {
+    -fx-background-color: #0008ffff;
+    -fx-text-fill: white;
+    -fx-padding: 8 14;
+    -fx-background-radius: 10px;
+}
+
+.dialog-pane .button:hover {
+    -fx-background-color: #1604dcff;
+}

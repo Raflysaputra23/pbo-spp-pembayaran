@@ -1,0 +1,125 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+/*@font-face {
+    font-family: "Poppins-regular";
+    src: url("/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+
+@font-face {
+    font-family: "Poppins-bold";
+    src: url("/fonts/Poppins/Poppins-SemiBold.ttf");
+}*/
+
+.logo {
+    -fx-background-image: url(../assets/user.jpg);
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+    -fx-background-insets: 0;
+}
+
+.poppins-regular {
+    -fx-font-family: "Poppins";
+}
+
+.poppins-semibold {
+    -fx-font-family: "Poppins SemiBold";
+}
+
+.poppins-semibold-italic {
+    -fx-font-family: "Poppins SemiBold Italic";
+}
+
+.bg-primary {
+    -fx-background-color: #2b4ed9;
+    -fx-text-fill: #fff;
+    -fx-fill: #fff;
+}
+
+.bg-primary:hover {
+    -fx-background-color: #243fb0;
+    -fx-text-fill: #fff;
+}
+
+.input {
+    -fx-background-color: #fff;
+    -fx-border-radius: 6;
+    -fx-border-color: #000;
+}
+
+.menuHover:hover {
+    -fx-background-color: #243fb0;
+}
+
+.bg-success {
+    -fx-background-color: #03fc13;
+    -fx-text-fill: #000;
+    -fx-fill: #000;
+}
+
+.bg-info {
+    -fx-background-color: #4a6eff;
+}
+
+.bg-danger {
+    -fx-background-color: #ed0e19;
+    -fx-fill: #fff;
+    -fx-text-fill: #fff;
+}
+
+.bg-warning {
+    -fx-background-color: #f7df05;
+}
+
+.text-title {
+    -fx-text-fill: #0d0d0c;
+    -fx-font-size: 25;
+    -fx-font-weight: bold;
+}
+
+.paragraf {
+    -fx-text-fill: #2b2b28;
+}
+
+.card {
+    -fx-background-color: #fff;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-min-width: 110;
+    -fx-min-height: 50;
+    -fx-padding: 10;
+}
+
+.table-view {
+    -fx-border-color: transparent;
+}
+
+.table-view .cell {
+    -fx-padding: 12px 16px;
+    -fx-font-size: 14px;
+}
+
+.table-view .table-cell {
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+}
+
+.table-view .column-header {
+    -fx-background-color: #0000ff;
+}
+
+.table-view .column-header .label {
+    -fx-font-weight: bold;
+    -fx-text-fill: #fff;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #fff;
+}
+
+.table-row-cell:even {
+    -fx-background-color: #f5f5f5;
+}

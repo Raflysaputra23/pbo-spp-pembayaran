@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="634.0" prefWidth="1070.0" styleClass="poppins-semibold" stylesheets="@../../styles/global.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kelompok.spp.controller.DashboardController">
+   <content>
+      <VBox spacing="18.0" styleClass="poppins-regular">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Aplikasi SPP Pembayaran">
+               <styleClass>
+                  <String fx:value="text-title" />
+                  <String fx:value="poppins-semibold" />
+               </styleClass></Text>
+            <HBox alignment="CENTER_LEFT" prefHeight="80.0" prefWidth="1010.0" spacing="4.0" style="-fx-background-color: #fff; -fx-border-color: transparent transparent transparent #2b4ed9; -fx-border-width: 8; -fx-background-radius: 8; -fx-border-radius: 8;">
+               <padding>
+                  <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+               </padding>
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 13;" styleClass="poppins-regular" text="Selamat datang diaplikasi pembayaran SPP. anda login sebagai">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="33.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: blue; -fx-font-size: 13;" styleClass="poppins-semibold" text="user">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+               </children>
+               <effect>
+                  <DropShadow blurType="TWO_PASS_BOX" height="26.5" radius="12.375" width="25.0">
+                     <color>
+                        <Color opacity="0.20000000298023224" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </HBox>
+            <TilePane alignment="CENTER" hgap="15.0" prefColumns="4" prefRows="1" prefWidth="1010.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="131.0" prefWidth="237.0" spacing="10.0" styleClass="card">
+                     <children>
+                        <VBox fx:id="boxSemua" alignment="CENTER" prefWidth="100.0" style="-fx-background-radius: 8; -fx-background-color: #0317fc;" HBox.hgrow="ALWAYS" />
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 13;" styleClass="poppins-regular" text="Total Siswa/i">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="totalSemuaSiswa" layoutX="31.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 18;" styleClass="poppins-semibold" text="0">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                     </children>
+                     <effect>
+                        <DropShadow blurType="TWO_PASS_BOX" height="23.0" radius="11.5" width="25.0">
+                           <color>
+                              <Color opacity="0.20000000298023224" />
+                           </color>
+                        </DropShadow>
+                     </effect></HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="131.0" prefWidth="237.0" spacing="10.0" styleClass="card">
+                     <children>
+                        <VBox fx:id="boxSiswa" alignment="CENTER" prefWidth="100.0" style="-fx-background-radius: 8;" styleClass="bg-danger" HBox.hgrow="ALWAYS" />
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 13;" styleClass="poppins-regular" text="Total Siswa">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="totalSiswa" layoutX="31.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 18;" styleClass="poppins-semibold" text="0">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                     </children>
+                     <effect>
+                        <DropShadow blurType="TWO_PASS_BOX" height="23.0" radius="11.5" width="25.0">
+                           <color>
+                              <Color opacity="0.20000000298023224" />
+                           </color>
+                        </DropShadow>
+                     </effect></HBox>
+                  <HBox alignment="CENTER" layoutX="263.0" layoutY="10.0" prefHeight="131.0" prefWidth="237.0" styleClass="card">
+                     <children>
+                        <VBox fx:id="boxSiswi" alignment="CENTER" prefWidth="100.0" style="-fx-background-radius: 8; -fx-background-color: #fc0afc;" HBox.hgrow="ALWAYS" />
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 13;" styleClass="poppins-regular" text="Total Siswi">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="totalSiswi" layoutX="31.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 18;" styleClass="poppins-semibold" text="0">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                     </children>
+                     <effect>
+                        <DropShadow blurType="TWO_PASS_BOX" height="23.0" radius="11.5" width="25.0">
+                           <color>
+                              <Color opacity="0.20000000298023224" />
+                           </color>
+                        </DropShadow>
+                     </effect></HBox>
+                  <HBox alignment="CENTER" layoutX="515.0" layoutY="10.0" prefHeight="131.0" prefWidth="237.0" styleClass="card">
+                     <children>
+                        <VBox fx:id="boxHistory" alignment="CENTER" prefWidth="100.0" style="-fx-background-radius: 8; -fx-background-color: #0afcf4;" HBox.hgrow="ALWAYS" />
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 13;" styleClass="poppins-regular" text="Total History">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="totalHistory" layoutX="31.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 18;" styleClass="poppins-semibold" text="0">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                     </children>
+                     <effect>
+                        <DropShadow blurType="TWO_PASS_BOX" height="23.0" radius="11.5" width="25.0">
+                           <color>
+                              <Color opacity="0.20000000298023224" />
+                           </color>
+                        </DropShadow>
+                     </effect></HBox>
+               </children>
+            </TilePane>
+            <TilePane fx:id="containerSiswa" alignment="CENTER" hgap="15.0" prefColumns="2" prefRows="1" prefWidth="200.0">
+               <children>
+                  <HBox prefHeight="131.0" prefWidth="490.0" spacing="10.0" styleClass="card">
+                     <children>
+                        <VBox fx:id="boxBayar" alignment="CENTER" prefWidth="200.0" style="-fx-background-radius: 8; -fx-background-color: #ffbc03;" />
+                        <VBox alignment="CENTER_LEFT" fillWidth="false" prefHeight="200.0" prefWidth="100.0" spacing="4.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold; -fx-font-size: 15;" styleClass="poppins-semibold" text="Pembayaran SPP bulan ini">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="totalLunas" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="poppins-regular" text="Rp. 220.000" />
+                              <HBox fx:id="boxHarga" fillHeight="false" style="-fx-background-radius: 10; -fx-background-color: #ff0000;">
+                                 <children>
+                                    <Text fx:id="textHarga" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #fff; -fx-font-weight: bold; -fx-font-size: 14;" styleClass="poppins-semibold" text="Belum Lunas">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="5.0" left="8.0" right="8.0" top="5.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <effect>
+                        <DropShadow blurType="TWO_PASS_BOX" height="23.0" radius="11.5" width="25.0">
+                           <color>
+                              <Color opacity="0.20000000298023224" />
+                           </color>
+                        </DropShadow>
+                     </effect></HBox>
+                  <HBox layoutX="10.0" layoutY="10.0" prefHeight="131.0" prefWidth="490.0" spacing="10.0" styleClass="card">
+                     <children>
+                        <VBox fx:id="boxDibayar" alignment="CENTER" prefWidth="200.0" style="-fx-background-radius: 8; -fx-background-color: #03ff74;" />
+                        <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" spacing="4.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15; -fx-font-weight: bold;" styleClass="poppins-semibold" text="SPP yang dibayar">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="totalBayar" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="poppins-regular" text="Rp. 220.000" />
+                              <Text fx:id="textBayar" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #ff0000; -fx-font-weight: bold; -fx-font-size: 14;" styleClass="poppins-semibold" text="Rp. -200.000">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                     </children>
+                     <effect>
+                        <DropShadow blurType="TWO_PASS_BOX" height="23.0" radius="11.5" width="25.0">
+                           <color>
+                              <Color opacity="0.20000000298023224" />
+                           </color>
+                        </DropShadow>
+                     </effect></HBox>
+               </children>
+            </TilePane>
+         </children></VBox>
+   </content>
+   <padding>
+      <Insets bottom="20.0" left="30.0" right="30.0" top="30.0" />
+   </padding>
+</ScrollPane>

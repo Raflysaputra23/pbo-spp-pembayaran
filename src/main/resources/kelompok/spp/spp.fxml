@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="634.0" prefWidth="1070.0" stylesheets="@../../styles/global.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kelompok.spp.controller.SppController">
+   <content>
+      <VBox spacing="18.0">
+         <children>
+            <HBox alignment="CENTER" prefWidth="1010.0" style="-fx-background-color: #fff; -fx-background-radius: 8;">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <HBox alignment="CENTER_LEFT" spacing="8.0">
+                     <children>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../../Users/rafly/OneDrive/Pictures/Saved%20Pictures/icon.jpg" />
+                           </image>
+                        </ImageView>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Spp">
+                           <styleClass>
+                              <String fx:value="text-title" />
+                              <String fx:value="poppins-semibold" />
+                           </styleClass></Text>
+                     </children>
+                  </HBox>
+                  <Region HBox.hgrow="ALWAYS" />
+                  <HBox alignment="CENTER_RIGHT" spacing="2.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="poppins-regular" text="Dashboard" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="/" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: blue;" styleClass="poppins-regular" text="Spp" />
+                     </children>
+                  </HBox>
+               </children>
+               <effect>
+                  <DropShadow blurType="TWO_PASS_BOX" radius="11.0" width="25.0">
+                     <color>
+                        <Color opacity="0.20000000298023224" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </HBox>
+            <HBox alignment="CENTER_LEFT">
+               <children>
+                  <TextField fx:id="inputSearch" onKeyReleased="#onSearch" promptText="Cari siswa" style="-fx-background-color: #fff; -fx-border-color: #000; -fx-border-radius: 8;" styleClass="poppins-regular" HBox.hgrow="ALWAYS">
+                     <padding>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </padding>
+                     <effect>
+                        <DropShadow blurType="TWO_PASS_BOX" radius="11.0" width="25.0">
+                           <color>
+                              <Color opacity="0.20000000298023224" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </TextField>
+               </children>
+            </HBox>
+            <TilePane fx:id="containerCard" alignment="TOP_CENTER" hgap="10.0" prefHeight="200.0" prefWidth="200.0" styleClass="poppins-regular" vgap="10.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="140.0" prefWidth="300.0" spacing="5.0" styleClass="card">
+                     <children>
+                        <ImageView fitHeight="120.0" fitWidth="107.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                           <image>
+                              <Image url="@../../../../../../../../Users/rafly/Downloads/user.jpg" />
+                           </image>
+                        </ImageView>
+                        <VBox alignment="CENTER_LEFT" spacing="5.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <VBox alignment="BOTTOM_LEFT" prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 14; -fx-font-weight: bold;" styleClass="poppins-semibold" text="Rafly Saputra">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="poppins-regular" text="10 RPL" />
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="poppins-regular" text="Rp. 220.000 - SPP" />
+                                    <Button mnemonicParsing="false" text="Detail">
+                                       <styleClass>
+                                          <String fx:value="bg-primary" />
+                                          <String fx:value="poppins-semibold" />
+                                       </styleClass>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children></HBox>
+                  <HBox alignment="CENTER" layoutX="365.0" layoutY="10.0" prefHeight="140.0" prefWidth="300.0" spacing="5.0" styleClass="card">
+                     <children>
+                        <ImageView fitHeight="120.0" fitWidth="107.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                           <image>
+                              <Image url="@../../../../../../../../Users/rafly/Downloads/user.jpg" />
+                           </image>
+                        </ImageView>
+                        <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" spacing="5.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <VBox alignment="BOTTOM_LEFT" prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="poppins-semibold" text="Rafly Saputra">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="poppins-regular" text="10 RPL" />
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="poppins-regular" text="Rp. 220.000 - SPP" />
+                                    <Button mnemonicParsing="false" text="Detail">
+                                       <styleClass>
+                                          <String fx:value="bg-primary" />
+                                          <String fx:value="poppins-semibold" />
+                                       </styleClass>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="520.0" layoutY="10.0" prefHeight="140.0" prefWidth="300.0" spacing="5.0" styleClass="card">
+                     <children>
+                        <ImageView fitHeight="120.0" fitWidth="107.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                           <image>
+                              <Image url="@../../../../../../../../Users/rafly/Downloads/user.jpg" />
+                           </image>
+                        </ImageView>
+                        <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" spacing="5.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <VBox alignment="BOTTOM_LEFT" prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="poppins-semibold" text="Rafly Saputra">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="poppins-regular" text="10 RPL" />
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="poppins-regular" text="Rp. 220.000 - SPP" />
+                                    <Button mnemonicParsing="false" text="Detail">
+                                       <styleClass>
+                                          <String fx:value="bg-primary" />
+                                          <String fx:value="poppins-semibold" />
+                                       </styleClass>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="675.0" layoutY="10.0" prefHeight="140.0" prefWidth="300.0" spacing="5.0" styleClass="card">
+                     <children>
+                        <ImageView fitHeight="120.0" fitWidth="107.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                           <image>
+                              <Image url="@../../../../../../../../Users/rafly/Downloads/user.jpg" />
+                           </image>
+                        </ImageView>
+                        <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" spacing="5.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <VBox alignment="BOTTOM_LEFT" prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="poppins-semibold" text="Rafly Saputra">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="poppins-regular" text="10 RPL" />
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="poppins-regular" text="Rp. 220.000 - SPP" />
+                                    <Button mnemonicParsing="false" text="Detail">
+                                       <styleClass>
+                                          <String fx:value="bg-primary" />
+                                          <String fx:value="poppins-semibold" />
+                                       </styleClass>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="365.0" layoutY="160.0" prefHeight="140.0" prefWidth="300.0" spacing="5.0" styleClass="card">
+                     <children>
+                        <ImageView fitHeight="120.0" fitWidth="107.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                           <image>
+                              <Image url="@../../../../../../../../Users/rafly/Downloads/user.jpg" />
+                           </image>
+                        </ImageView>
+                        <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" spacing="5.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <VBox alignment="BOTTOM_LEFT" prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="poppins-semibold" text="Rafly Saputra">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="poppins-regular" text="10 RPL" />
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="poppins-regular" text="Rp. 220.000 - SPP" />
+                                    <Button mnemonicParsing="false" text="Detail">
+                                       <styleClass>
+                                          <String fx:value="bg-primary" />
+                                          <String fx:value="poppins-semibold" />
+                                       </styleClass>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="520.0" layoutY="160.0" prefHeight="140.0" prefWidth="300.0" spacing="5.0" styleClass="card">
+                     <children>
+                        <ImageView fitHeight="120.0" fitWidth="107.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                           <image>
+                              <Image url="@../../../../../../../../Users/rafly/Downloads/user.jpg" />
+                           </image>
+                        </ImageView>
+                        <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" spacing="5.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <VBox alignment="BOTTOM_LEFT" prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="poppins-semibold" text="Rafly Saputra">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="poppins-regular" text="10 RPL" />
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="poppins-regular" text="Rp. 220.000 - SPP" />
+                                    <Button mnemonicParsing="false" text="Detail">
+                                       <styleClass>
+                                          <String fx:value="bg-primary" />
+                                          <String fx:value="poppins-semibold" />
+                                       </styleClass>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children></TilePane>
+         </children>
+      </VBox>
+   </content>
+   <padding>
+      <Insets bottom="20.0" left="30.0" right="30.0" top="30.0" />
+   </padding>
+</ScrollPane>

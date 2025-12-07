@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" stylesheets="@../../styles/global.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kelompok.spp.controller.RegisterAdminController">
+         <children>
+            <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefWidth="320.0" spacing="5.0" style="-fx-background-color: #fff; -fx-background-radius: 8; -fx-border-radius: 8; -fx-padding: 20;">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #ed0e19;" text="Daftar">
+               <styleClass>
+                  <String fx:value="text-title" />
+                  <String fx:value="poppins-semibold" />
+               </styleClass></Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="poppins-regular" text="Silahkan daftar terlebih dahulu" />
+                  <HBox fx:id="alertBox" alignment="CENTER" style="-fx-background-radius: 8;" styleClass="bg-danger" visible="false" VBox.vgrow="ALWAYS">
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding>
+                     <children>
+                        <Text fx:id="alertText" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="poppins-semibold" text="Register gagal" />
+                     </children>
+                  </HBox>
+                  <VBox spacing="20.0">
+                     <children>
+                        <VBox spacing="2.0">
+                           <children>
+                              <Label styleClass="poppins-regular" text="Username">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="username" onKeyReleased="#onChange" promptText="Masukkan username">
+                                 <padding>
+                                    <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                                 </padding>
+                           <styleClass>
+                              <String fx:value="poppins-regular" />
+                              <String fx:value="input" />
+                           </styleClass>
+                              </TextField>
+                           </children>
+                        </VBox>
+                  <VBox layoutX="10.0" layoutY="10.0" spacing="2.0">
+                     <children>
+                        <Label styleClass="poppins-regular" text="Nama Lengkap">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="namaLengkap" onKeyReleased="#onChange" promptText="Masukkan nama lengkap">
+                           <padding>
+                              <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                           </padding>
+                           <styleClass>
+                              <String fx:value="poppins-regular" />
+                              <String fx:value="input" />
+                           </styleClass>
+                        </TextField>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="10.0" layoutY="87.0" spacing="2.0">
+                     <children>
+                        <Label styleClass="poppins-regular" text="Email">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="email" onKeyReleased="#onChange" promptText="Masukkan nama email">
+                           <padding>
+                              <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                           </padding>
+                           <styleClass>
+                              <String fx:value="poppins-regular" />
+                              <String fx:value="input" />
+                           </styleClass>
+                        </TextField>
+                     </children>
+                  </VBox>
+                        <VBox layoutX="10.0" layoutY="10.0" spacing="2.0">
+                           <children>
+                              <Label styleClass="poppins-regular" text="Password">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                        <PasswordField fx:id="password" onKeyReleased="#onChange" promptText="Masukkan password">
+                           <padding>
+                              <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                           </padding>
+                           <styleClass>
+                              <String fx:value="poppins-regular" />
+                              <String fx:value="input" />
+                           </styleClass>
+                        </PasswordField>
+                           </children>
+                        </VBox>
+                  <VBox layoutX="10.0" layoutY="224.0" spacing="2.0">
+                     <children>
+                        <Label styleClass="poppins-regular" text="Confirm Password">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <PasswordField fx:id="confirmPassword" onKeyReleased="#onConfirmPassword" promptText="Masukkan password">
+                           <padding>
+                              <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                           </padding>
+                           <styleClass>
+                              <String fx:value="poppins-regular" />
+                              <String fx:value="input" />
+                           </styleClass>
+                        </PasswordField>
+                        <Text fx:id="validasiConfirmPassword" strokeType="OUTSIDE" strokeWidth="0.0" text="validasi text" visible="false" />
+                     </children>
+                  </VBox>
+                        <Button id="admin" fx:id="submit" disable="true" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleRegister" text="Daftar">
+                           <padding>
+                              <Insets bottom="8.0" top="8.0" />
+                           </padding>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <styleClass>
+                        <String fx:value="bg-danger" />
+                        <String fx:value="poppins-regular" />
+                     </styleClass>
+                        </Button>
+                  <Button id="admin" fx:id="daftarSiswa" layoutX="10.0" layoutY="295.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Daftar Siswa">
+                     <padding>
+                        <Insets bottom="8.0" top="8.0" />
+                     </padding>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <styleClass>
+                        <String fx:value="bg-primary" />
+                        <String fx:value="poppins-regular" />
+                     </styleClass>
+                  </Button>
+                        <HBox alignment="CENTER">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="poppins-regular" text="Sudah punya akun?" />
+                              <Hyperlink onAction="#handlePage" styleClass="poppins-regular" text="Login" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+   <effect>
+      <DropShadow blurType="TWO_PASS_BOX" radius="11.0" width="25.0">
+         <color>
+            <Color opacity="0.20000000298023224" />
+         </color>
+      </DropShadow>
+   </effect>
+</VBox>
