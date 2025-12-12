@@ -78,7 +78,7 @@
                               </DropShadow>
                            </effect>
                         </ImageView>
-                        <VBox fx:id="grupPassword" prefHeight="200.0" prefWidth="100.0" spacing="10.0" style="pad: 8;">
+                        <VBox fx:id="grupPassword" prefHeight="200.0" prefWidth="100.0" spacing="10.0" style="pad: 8;" visible="false">
                            <children>
                               <VBox prefWidth="100.0" spacing="5.0">
                                  <children>

@@ -27,7 +27,6 @@ import kelompok.spp.model.object.JurusanModel;
  *
  * @author rafly
  */
-
 public class RegisterController implements Initializable {
 
     private AuthController rootPane;
@@ -106,7 +105,11 @@ public class RegisterController implements Initializable {
             alertText.setText("Register berhasil");
             Timeout.setTimeout(() -> {
                 try {
-                    this.rootPane.handlePage(e, "loginAdmin");
+                    if (btn.equals("admin")) {
+                        this.rootPane.handlePage(e, "loginAdmin");
+                    } else {
+                        this.rootPane.handlePage(e, "login");
+                    }
                 } catch (IOException ex) {
                     System.getLogger(RegisterController.class.getName()).log(System.Logger.Level.ERROR, (String) null, ex);
                 }
@@ -143,7 +146,7 @@ public class RegisterController implements Initializable {
     public void handlePage(ActionEvent e) throws IOException {
         this.rootPane.handlePage(e, "login");
     }
-    
+
     private void clearText() {
         nisn.setText("");
         namaLengkap.setText("");

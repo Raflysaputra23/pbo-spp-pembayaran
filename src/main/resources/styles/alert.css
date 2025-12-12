@@ -5,6 +5,17 @@
   -fx-padding: 8px;
 }
 
+.dialog-pane .header-panel {
+    -fx-background-color: transparent;
+}
+
+.dialog-pane .header-panel .label {
+    -fx-text-fill: #fff;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Poppins Semibold"
+}
+
 .dialog-pane .label {
   -fx-text-fill: white;
   -fx-font-size: 14px;

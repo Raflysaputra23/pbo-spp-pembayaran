@@ -5,7 +5,6 @@
 package kelompok.spp.model;
 
 import java.sql.SQLException;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Map;
@@ -46,13 +45,13 @@ public class PaymentModel {
         }
     }
 
-    public static boolean bayarSpp(ArrayList<String> bulan, String nisn, double harga) throws SQLException {
+    public static boolean bayarSpp(ArrayList<String> bulan, String nisn, double harga, String metode) throws SQLException {
         long number = (long) (Math.random() * 1_000_000_0000L);
         String noTrx = String.format("%010d", number);
         try {
             db.query("insert into tranksaksi(TranksaksiID, MetodePay, TotalHarga, CreateAt) values (?,?,?,?)");
             db.bind(1, noTrx);
-            db.bind(2, "Cash");
+            db.bind(2, metode);
             db.bind(3, harga * bulan.size());
             db.bind(4, LocalDateTime.now());
             db.execute();

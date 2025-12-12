@@ -70,7 +70,7 @@ public class AuthController implements Initializable {
             this.register = registerLoader.getController();
             this.register.setRoot(this);
 
-            rootPane.setCenter(this.viewLoginAdmin);
+            rootPane.setCenter(this.viewLogin);
         } catch (IOException ex) {
             System.getLogger(AuthController.class.getName()).log(System.Logger.Level.ERROR, (String) null, ex);
         }
